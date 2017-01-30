@@ -1,0 +1,35 @@
+body {
+  background-color: #ccc; }
+
+.box {
+  border-radius: 1em;
+  border: 2px solid #555;
+  margin: auto;
+  width: 30%;
+  height: 100px;
+  margin: 2em;
+  background-color: seagreen;
+  padding: 1em; }
+
+.f1 {
+  animation: back .5s 1;
+  background-color: violet;
+  transform: rotateX(180deg); }
+
+@keyframes back {
+  from {
+    transform: rotateX(0deg); }
+  to {
+    transform: rotateX(180deg); } }
+.f2 {
+  background-color: seagreen;
+  animation: front .5s 1;
+  transform: rotateX(0deg); }
+
+@keyframes front {
+  from {
+    transform: rotateX(180deg); }
+  to {
+    transform: rotateX(0deg); } }
+
+/*# sourceMappingURL=style.css.map */
