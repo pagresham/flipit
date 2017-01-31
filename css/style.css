@@ -1,35 +1,103 @@
 body {
   background-color: #ccc; }
 
+table {
+  width: 100%;
+  height: 500px;
+  background-color: #666;
+  border-collapse: collapse; }
+
+td {
+  width: 30%;
+  height: 20em;
+  border: 1px solid black; }
+
 .box {
   border-radius: 1em;
   border: 2px solid #555;
   margin: auto;
-  width: 30%;
-  height: 100px;
-  margin: 2em;
-  background-color: seagreen;
+  width: 5em;
+  height: 5em;
   padding: 1em; }
 
-.f1 {
+.box1 {
+  background-color: seagreen; }
+
+.b1a {
   animation: back .5s 1;
   background-color: violet;
   transform: rotateX(180deg); }
 
 @keyframes back {
   from {
-    transform: rotateX(0deg); }
+    transform: rotateX(0deg);
+    background-color: seagreen; }
   to {
-    transform: rotateX(180deg); } }
-.f2 {
-  background-color: seagreen;
+    transform: rotateX(180deg);
+    background-color: violet; } }
+.b1b {
   animation: front .5s 1;
+  background-color: seagreen;
   transform: rotateX(0deg); }
 
 @keyframes front {
   from {
+    background-color: violet;
     transform: rotateX(180deg); }
   to {
-    transform: rotateX(0deg); } }
+    transform: rotateX(0deg);
+    transform: rotateY(0deg); } }
+.box2 {
+  background-color: #eee; }
+
+.b2a {
+  background-color: #222;
+  transform: rotateY(180deg);
+  animation: flip2 2s 1; }
+
+@keyframes flip2 {
+  from {
+    transform: rotateY(0deg);
+    background-color: #eee; }
+  to {
+    transform: rotateY(180);
+    background-color: #222; } }
+.b2b {
+  background-color: #eee;
+  transfrom: rotateY(0deg);
+  animation: flip1 2s 1; }
+
+@keyframes flip1 {
+  from {
+    background-color: #222;
+    transform: rotateY(180deg); }
+  to {
+    background-color: #eee;
+    transform: rotateY(0deg); } }
+.box3 {
+  border-radius: 50%;
+  background-color: turquoise;
+  text-align: center; }
+
+.b3a {
+  animation: spin1 4s; }
+
+@keyframes spin1 {
+  from {
+    transforr: rotateZ(0deg); }
+  to {
+    transform: rotateZ(2160deg); } }
+.b3b {
+  animation: spin2 4s; }
+
+@keyframes spin2 {
+  0% {
+    transform: rotateZ(0deg);
+    background-color: turqoise; }
+  50% {
+    background-color: white; }
+  100% {
+    transform: rotateZ(-2160deg);
+    background-color: turqoise; } }
 
 /*# sourceMappingURL=style.css.map */
